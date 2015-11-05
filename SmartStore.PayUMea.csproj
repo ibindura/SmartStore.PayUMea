@@ -71,18 +71,22 @@
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
-    <Reference Include="SmartStore.Core">
-      <HintPath>..\..\..\..\..\..\..\..\Downloads\payu-final-logo-suite\PAYU FINAL LOGO SUITE\RGB\SmartStore.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="SmartStore.Services">
-      <HintPath>..\..\..\..\..\..\..\..\Downloads\payu-final-logo-suite\PAYU FINAL LOGO SUITE\RGB\SmartStore.Services.dll</HintPath>
-    </Reference>
-    <Reference Include="SmartStore.Web">
-      <HintPath>..\..\..\..\..\..\..\..\Downloads\payu-final-logo-suite\PAYU FINAL LOGO SUITE\RGB\SmartStore.Web.dll</HintPath>
-    </Reference>
-    <Reference Include="SmartStore.Web.Framework">
-      <HintPath>..\..\..\..\..\..\..\..\Downloads\payu-final-logo-suite\PAYU FINAL LOGO SUITE\RGB\SmartStore.Web.Framework.dll</HintPath>
-    </Reference>
+     <ProjectReference Include="..\..\Libraries\SmartStore.Core\SmartStore.Core.csproj">
+      <Project>{6bda8332-939f-45b7-a25e-7a797260ae59}</Project>
+      <Name>SmartStore.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\SmartStore.Services\SmartStore.Services.csproj">
+      <Project>{210541ad-f659-47da-8763-16f36c5cd2f4}</Project>
+      <Name>SmartStore.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Presentation\SmartStore.Web.Framework\SmartStore.Web.Framework.csproj">
+      <Project>{75fd4163-333c-4dd5-854d-2ef294e45d94}</Project>
+      <Name>SmartStore.Web.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Presentation\SmartStore.Web\SmartStore.Web.csproj">
+      <Project>{4f1f649c-1020-45be-a487-f416d9297ff3}</Project>
+      <Name>SmartStore.Web</Name>
+    </ProjectReference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data.DataSetExtensions" />
